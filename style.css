@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.4;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom styles */
+
+:root {
+  --accent-magneta: hsl(300, 43%, 22%);
+  --accent-pink: hsl(333, 80%, 67%);
+  --normal-magenta: hsl(303, 10%, 53%);
+  --light-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+/* Utilities */
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+/* page styles */
+.page-content {
+  gap: 2.5rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  padding: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--accent-magneta);
+}
+
+.page-desc {
+  color: var(--normal-magenta);
+  font-weight: 400;
+}
+
+/* rating component styles */
+.ratings-display {
+  gap: 1rem;
+}
+
+.rating-item {
+  background-color: var(--light-magenta);
+  padding: 1rem 2rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rating-content {
+  font-weight: 700;
+  color: var(--accent-magneta);
+}
+
+/* testimonial section */
+.testimonials {
+  gap: 1rem;
+}
+
+.testimonial {
+  background-color: var(--accent-magneta);
+  color: var(--white);
+  padding: 2rem;
+  text-align: left;
+  border-radius: 0.5rem;
+}
+
+.user-details {
+  gap: 1.5rem;
+}
+
+.user__icon {
+  max-width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user__name {
+  font-weight: 700;
+}
+
+.buyer-type.verified {
+  color: var(--accent-pink);
+}
+
+.testimonial__content {
+  margin-top: 1.5rem;
+}
