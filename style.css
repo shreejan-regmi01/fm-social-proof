@@ -68,7 +68,7 @@ a {
 
 body {
   font-family: "League Spartan", sans-serif;
-  margin: 1.5rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
@@ -81,9 +81,16 @@ body {
   display: flex;
 }
 
+main {
+  display: grid;
+  place-content: center;
+}
+
 /* page styles */
 .page-content {
   gap: 2.5rem;
+  max-width: 1500px;
+  /* margin: auto; */
 }
 
 .page-title {
@@ -153,4 +160,80 @@ body {
 
 .testimonial__content {
   margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    padding-inline: 10rem;
+    padding-block: 8rem;
+  }
+
+  .page-title-desc {
+    text-align: left;
+    /* outline: 1px solid red; */
+    padding-right: 30%;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 0.9;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-desc {
+    font-size: 1.25rem;
+  }
+
+  .page-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ratings-display {
+    grid-template-rows: repeat(3, min-content);
+    place-content: center;
+  }
+
+  .rating-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    /* width: 80%; */
+  }
+
+  .rating-item:nth-child(2) {
+    transform: translateX(2rem);
+  }
+
+  .rating-item:nth-child(3) {
+    transform: translateX(4rem);
+  }
+
+  .testimonials {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+  }
+
+  .testimonial:nth-child(2) {
+    position: relative;
+    top: 1rem;
+  }
+
+  .testimonial:nth-child(3) {
+    position: relative;
+    top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1430px) {
+  body {
+    padding-inline: 17rem;
+    padding-block: 8rem;
+  }
 }
