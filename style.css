@@ -70,6 +70,7 @@ body {
   font-family: "League Spartan", sans-serif;
   padding: 1.5rem;
   text-align: center;
+  position: relative;
 }
 
 /* Utilities */
@@ -160,6 +161,17 @@ main {
 
 .testimonial__content {
   margin-top: 1.5rem;
+}
+
+.top-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bottom-background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 1000px) {
